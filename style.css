@@ -1,0 +1,138 @@
+@import url(https://db.onlinewebfonts.com/c/26116a550c79bedd37631b62768b62d9?family=Mulish+Bold);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff7a00;
+  --secondary-color: #585858;
+  --tertiary-color: #afb0b1;
+  --background-color: #fffbf6;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Mulish Bold";
+}
+
+.container {
+  display: flex;
+}
+
+.left-side {
+  width: 100%;
+  padding: 3%;
+  background-color: var(--background-color);
+
+  .logo img {
+    width: 50px;
+    /* height: 40; */
+    /* margin-bottom: 71px; */
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  .Welcome {
+    font-size: 18px;
+    /* margin-bottom: 81px; */
+  }
+
+  .input-one,
+  .input-two {
+    background-color: var(--white);
+    width: 474px;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 20px;
+  }
+
+  .input-one,
+  .input-two {
+    border: 1px solid var(--white);
+    input {
+      width: 136px;
+      height: 20px;
+      border: none;
+      outline: none;
+    }
+
+    i {
+      float: right;
+    }
+
+    &:hover {
+      border: 1px solid var(--primary-color);
+    }
+  }
+
+  label {
+    display: block;
+    /* margin-bottom: 21px; */
+  }
+
+  .show-hide-btn {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 10px;
+  }
+
+  .label-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .margin-42 {
+    /* margin-bottom: 42px; */
+    width: 474px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .check {
+    display: inline-flex;
+    gap: 5px;
+  }
+  .login-btn {
+    background-color: var(--primary-color);
+    width: 474px;
+    height: 71px;
+    color: var(--white);
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+  }
+}
+
+.right-side {
+  width: 100%;
+  background: url(image/login-image.jpeg) var(--primary-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .box {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* .left {
+    background-color: #f3f5f6;
+    width: 131px;
+    height: 115px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 22px 29px 20.79px 30px;
+  } */
+
+  /* .right {
+    background-color: var(--white);
+    width: 462px;
+    height: 115px;
+    border-radius: 0px 10px 10px 0px;
+  } */
+}

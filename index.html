@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- container begin -->
+    <div class="container">
+      <!-- left-side begin -->
+      <div class="left-side">
+        <div class="logo">
+          <img src="image/leadwaylogo.png" alt />
+        </div>
+
+        <h2>Underwriter Dashboard</h2>
+
+        <p class="Welcome">Welcome. Login to your account.</p>
+
+        <!-- form begin -->
+        <form action="#">
+          <!-- input one begin -->
+          <div class="input-one">
+            <label for="id">Login ID</label>
+            <i class="bx bx-user"></i>
+            <input type="text" required autofocus />
+            <!-- input one end -->
+          </div>
+
+          <!-- input two begin -->
+          <div class="input-two">
+            <div class="label-group">
+              <label for="id">Password</label>
+              <button type="button" class="show-hide-btn">SHOW</button>
+            </div>
+            <i class="bx bx-lock-alt"></i>
+            <input type="password" required />
+            <!-- input two end -->
+          </div>
+
+          <!-- label-group for remember me and reset password begin -->
+          <div class="label-group margin-42">
+            <div class="check">
+              <input type="checkbox" id="logged-in" />
+              <p>keep me logged in</p>
+            </div>
+            <p><a href="#">Reset Password</a></p>
+            <!-- label-group for remember me and reset password end -->
+          </div>
+
+          <!-- Login Button -->
+          <button type="submit" class="login-btn">Login</button>
+
+          <!-- form end -->
+        </form>
+
+        <!-- left-side end  -->
+      </div>
+
+      <!-- right-side begin -->
+      <div class="right-side">
+        <!-- box begin -->
+        <div class="box">
+          <div class="left">image</div>
+
+          <div class="right">test</div>
+          <!-- box end -->
+        </div>
+        <!-- right-side end  -->
+      </div>
+      <!-- container end -->
+    </div>
+  </body>
+</html>
