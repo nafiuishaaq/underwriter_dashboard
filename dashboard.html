@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Underwriter Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+  </head>
+  <body>
+    <!-- container begin -->
+    <div class="container-dash">
+      <nav>
+        <a href="index.html"><i class="fa-regular fa-objects-column"></i> </a>
+        <a href="#"><i class="fa-regular fa-calendar-lines"></i> </a>
+        <a href="#"><i class="fa-regular fa-objects-column"></i> </a>
+        <a href="#"><i class="fa-regular fa-chart-pie-simple"></i> </a>
+        <a href="#"><i class="fa-regular fa-gear-complex"></i> </a>
+      </nav>
+
+      <aside>
+        <img src="image/leadwaylogodash.png" alt="" width="100%" />
+        <ul>
+          <div class="list">
+            <p>TRM</p>
+          </div>
+          <a href="dashboard.html">
+            <div class="list active">
+              <i class="fa-sharp fa-regular fa-chart-simple"></i>
+              <li>Overview</li>
+            </div>
+          </a>
+          <a href="#">
+            <div class="list">
+              <i class="fa-sharp fa-regular fa-table-list"></i>
+              <li>Request</li>
+            </div>
+          </a>
+        </ul>
+      </aside>
+
+      <main>
+        <div class="main-top">
+          <i class="bx bx-bell"></i>
+          <img src="image/Group 38.png" alt="" />
+          <span>Nafiu</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+        <!-- welcome mesage begin -->
+        <div class="dashboard-welcome">
+          <div class="message">
+            <h3>Welcome, <span>Nafiu</span></h3>
+            <p>Take a look at your dashboard and see all pending taks</p>
+          </div>
+          <div class="new-btn">
+            <a href="#" type="button" class="add-inspection-btn">
+              <i class="bx bx-plus"></i>Create New Inspection
+            </a>
+          </div>
+          <!-- welcome mesage end -->
+        </div>
+
+        <div class="body-cards">
+          <div class="card-section">
+            <div class="card-one">
+              <div class="bubble left-bubble"></div>
+              <div class="bubble right-bubble"></div>
+              <span>All Requests</span>
+              <div class="card-icon-text">
+                <i class="fa-regular fa-hand-pointer"></i>
+                <h1>32</h1>
+              </div>
+            </div>
+            <div class="card-two">
+              <div class="bubble left-bubble"></div>
+              <div class="bubble right-bubble"></div>
+              <span>Completed Requests</span>
+              <div class="card-icon-text">
+                <i class="fa-regular fa-hand-pointer"></i>
+                <h1>32</h1>
+              </div>
+            </div>
+            <div class="card-three">
+              <div class="bubble left-bubble"></div>
+              <div class="bubble right-bubble"></div>
+              <span>Ongoing Requests</span>
+              <div class="card-icon-text">
+                <i class="fa-regular fa-hand-pointer"></i>
+                <h1>32</h1>
+              </div>
+            </div>
+            <div class="card-four">
+              <div class="bubble left-bubble"></div>
+              <div class="bubble right-bubble"></div>
+              <span>Delayed Requests</span>
+              <div class="card-icon-text">
+                <i class="fa-regular fa-hand-pointer"></i>
+                <h1>32</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity-section">
+            <div class="activity-head">
+              <div class="left-text-head">Activity</div>
+              <a href="#" class="view-all-link"
+                >View all <i class="bx bx-chevron-right"></i
+              ></a>
+            </div>
+            <div class="activity-body">
+              <div class="left-text-body">
+                You have a property inspection coming up in three days
+              </div>
+              <a href="#" class="right-text-body">Set reminder</a>
+            </div>
+            <!-- <hr /> -->
+            <div class="activity-body">
+              <div class="left-text-body">
+                You have a property inspection coming up in three days
+              </div>
+              <a href="#" class="right-text-body">Set inspection</a>
+            </div>
+            <!-- <hr /> -->
+            <div class="activity-body">
+              <div class="left-text-body">
+                You have a property inspection coming up in three days
+              </div>
+              <a href="#" class="right-text-body">Re-Schedule now</a>
+            </div>
+            <!-- <hr /> -->
+            <div class="activity-body">
+              <div class="left-text-body">
+                You have a property inspection coming up in three days
+              </div>
+              <a href="#" class="right-text-body">See inspection</a>
+            </div>
+            <!-- <hr /> -->
+          </div>
+        </div>
+
+        <div class="table-header">
+          <p>Created Inspections</p>
+          <a href="#" class="view-all-link"
+            >View all <i class="bx bx-chevron-right"></i
+          ></a>
+        </div>
+        <div class="table">
+          <table>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Class</th>
+              <th>Inspection methode</th>
+              <th>Officer</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>12345</td>
+              <td>Nafiu Ishaq</td>
+              <td>Marine</td>
+              <td>Digital</td>
+              <td>Ahmed Mahmud</td>
+              <td>Quote request</td>
+            </tr>
+            <tr>
+              <td>12345</td>
+              <td>Nafiu Ishaq</td>
+              <td>Marine</td>
+              <td>Digital</td>
+              <td>Ahmed Mahmud</td>
+              <td>Quote request</td>
+            </tr>
+            <tr>
+              <td>12345</td>
+              <td>Nafiu Ishaq</td>
+              <td>Marine</td>
+              <td>Digital</td>
+              <td>Ahmed Mahmud</td>
+              <td>Quote request</td>
+            </tr>
+            <tr>
+              <td>12345</td>
+              <td>Nafiu Ishaq</td>
+              <td>Marine</td>
+              <td>Digital</td>
+              <td>Ahmed Mahmud</td>
+              <td>Quote request</td>
+            </tr>
+            <tr>
+              <td>12345</td>
+              <td>Nafiu Ishaq</td>
+              <td>Marine</td>
+              <td>Digital</td>
+              <td>Ahmed Mahmud</td>
+              <td>Quote request</td>
+            </tr>
+            <tr>
+              <td>12345</td>
+              <td>Nafiu Ishaq</td>
+              <td>Marine</td>
+              <td>Digital</td>
+              <td>Ahmed Mahmud</td>
+              <td>Quote request</td>
+            </tr>
+            <tr>
+              <td>12345</td>
+              <td>Nafiu Ishaq</td>
+              <td>Marine</td>
+              <td>Digital</td>
+              <td>Ahmed Mahmud</td>
+              <td>Quote request</td>
+            </tr>
+          </table>
+        </div>
+      </main>
+
+      <!-- container end -->
+    </div>
+  </body>
+</html>
