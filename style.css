@@ -278,15 +278,37 @@ body {
     flex: 1 1 82%;
     overflow-y: auto;
 
+    /* .main-top {
+      display: flex;
+      justify-content: space-between;
+    } */
+
     .main-top {
       background-color: var(--white);
       height: 8%;
       border-bottom: 1px solid var(--border-color);
       display: flex;
-      justify-content: end;
+      justify-content: space-between;
       align-items: center;
       padding: 30px;
-      gap: 15px;
+
+      .hamburger {
+        /* visibility: hidden; */
+      }
+
+      .top-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: var(--secondary-color);
+        }
+      }
 
       i {
         font-size: 30px;
@@ -340,7 +362,7 @@ body {
     .body-cards {
       display: flex;
       justify-content: space-between;
-      padding: 30px;
+      padding: 10px 25px 10px 10px;
       gap: 10px;
     }
 
@@ -423,7 +445,8 @@ body {
       flex: 1 1 40%;
       border: 1px solid var(--border-color);
       border-radius: 5px;
-      margin: 5px;
+      border: 1px solid red;
+      margin-left: 10px;
 
       .activity-head {
         display: flex;
@@ -456,31 +479,35 @@ body {
       color: #c3c4c6;
       font-size: 12px;
     }
+  }
 
-    .table {
-      /* width: 100%; */
-      margin: 30px;
-      padding: 20px;
-      font-size: 12px;
-      border: 1px solid var(--border-color);
-      border-radius: 5px;
+  .table-header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    border-radius: 5px;
+  }
+
+  table {
+    width: 100%;
+    margin: 20px;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+    margin: 20px;
+
+    tr th {
+      border-bottom: 1px solid red;
+      padding: 10px 0px;
+      text-align: left;
     }
-    .table-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px;
-      margin: 30px;
 
-      p {
-        color: #34475e;
-        font-size: 12px;
-      }
-    }
-
-    /* todo  */
-    table {
-      width: 100%;
-      border-radius: 5px;
+    tr td {
+      border-bottom: 1px solid red;
+      padding: 10px 0px;
       text-align: left;
     }
   }
@@ -523,9 +550,16 @@ body {
   }
 
   /* Dashboard Style */
-nav, aside{
-  display: none !important;
-}
+
+  nav,
+  aside {
+    display: none !important;
+  }
+
+  .hamburger {
+    visibility: visible;
+  }
+
   .body-cards {
     .card-section {
       flex-direction: column;

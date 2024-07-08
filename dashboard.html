@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <title>Underwriter Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -41,6 +41,7 @@
         <a href="#"><i class="fa-regular fa-gear-complex"></i> </a>
       </nav>
 
+      <!-- aside begin -->
       <aside>
         <img src="image/leadwaylogodash.png" alt="" width="100%" />
         <ul>
@@ -61,13 +62,21 @@
           </a>
         </ul>
       </aside>
+      <!-- aside end -->
 
       <main>
         <div class="main-top">
-          <i class="bx bx-bell"></i>
-          <img src="image/Group 38.png" alt="" />
-          <span>Nafiu</span>
-          <i class="bx bx-chevron-down"></i>
+          <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+          <div class="top-right">
+            <a href="#">
+              <i class="bx bx-bell"></i>
+            </a>
+            <a href="#">
+              <img src="image/avatar.png" alt="" />
+              <span>Nafiu</span>
+              <i class="bx bx-chevron-down"></i>
+            </a>
+          </div>
         </div>
         <!-- welcome mesage begin -->
         <div class="dashboard-welcome">
@@ -167,7 +176,8 @@
             >View all <i class="bx bx-chevron-right"></i
           ></a>
         </div>
-        <div class="table">
+
+        <div class="table-container">
           <table>
             <tr>
               <th>ID</th>
@@ -239,5 +249,8 @@
 
       <!-- container end -->
     </div>
+
+    <!--script link  -->
+    <script src="script.js"></script>
   </body>
 </html>
