@@ -293,7 +293,7 @@ body {
       padding: 30px;
 
       .hamburger {
-        /* visibility: hidden; */
+        visibility: hidden;
       }
 
       .top-right {
