@@ -291,6 +291,9 @@ body {
       justify-content: space-between;
       align-items: center;
       padding: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
 
       .hamburger {
         visibility: hidden;
@@ -335,18 +338,6 @@ body {
       align-items: center;
       padding: 30px;
 
-      .add-inspection-btn {
-        padding: 10px;
-        background-color: var(--primary-color);
-        color: var(--white);
-        border: none;
-        border-radius: 3px;
-        display: inline-flex;
-        font-size: 11px;
-        gap: 5px;
-        text-decoration: none;
-      }
-
       .message {
         h3 {
           color: #34475e;
@@ -356,6 +347,20 @@ body {
           color: var(--dark-color);
           font-size: 12px;
         }
+      }
+
+      .add-inspection-btn {
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--white);
+        border: none;
+        border-radius: 3px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        gap: 5px;
+        text-decoration: none;
       }
     }
 
@@ -481,9 +486,10 @@ body {
   }
 
   .table-container {
-    width: 100%;
+    /* width: 100%; */
     padding: 10px 25px 10px 10px;
     margin: 0 3px;
+    font-size: 12px;
 
     .table-header {
       padding: 20px 0;
@@ -499,6 +505,14 @@ body {
       border-radius: 5px;
       border: 1px solid var(--border-color);
       text-align: left;
+
+      thead {
+        color: var(--rare-color);
+      }
+
+      tbody {
+        color: var(--dark-color);
+      }
 
       tr th {
         border-bottom: 1px solid var(--border-color);
@@ -632,6 +646,15 @@ body {
   table {
     width: 100%;
     text-align: left;
+    font-size: 12px;
+
+    thead {
+      color: var(--rare-color);
+    }
+
+    tbody {
+      color: var(--dark-color);
+    }
 
     tr th {
       border-bottom: 1px solid var(--border-color);
@@ -643,54 +666,118 @@ body {
       border-bottom: 1px solid var(--border-color);
       padding: 10px 10px;
       text-align: left;
-      font-size: 14px;
     }
   }
 }
 
+/* request page style */
+
+/* new inspection page style*/
+
+.close-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #acacac;
+
+  .fa-close {
+    font-size: 30px;
+  }
+}
+
 .new-cards {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding-top: 20px;
+  padding: 50px;
 
   .inspection-type {
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
 
-  .center-image img {
-    width: 150px;
+  .type-wrapper {
+    width: 200px;
+    height: 250px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+
+    &:hover {
+      border: 1px solid red;
+    }
+  }
+
+  .left-type,
+  .right-type {
+    /* width: 100%;
+    height: 120px; */
+    position: relative;
+
+    .arrow {
+      position: absolute;
+      bottom: 10px;
+      left: -10px;
+    }
+
+    .center-image {
+      width: 100px;
+      height: 100px;
+      border: 3px solid var(--rare-color);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* position: absolute; */
+    }
+
+    .center-image img {
+      width: 70px;
+    }
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 10px 0;
-    color: var(--secondary-color);
+    color: #34475e;
   }
 
   select {
-    width: 310px;
+    width: 430px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid var(--border-color);
   }
 
   button {
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 8px;
     margin-top: 20px;
     background-color: var(--primary-color);
     border-radius: 3px;
     border: none;
     color: var(--white);
+
+    a {
+      text-decoration: none;
+      color: var(--white);
+    }
   }
 }
-/* request page style */
+/* new inspection page style*/
 
-/* post-lost-type style */
+/* post-lost-type form page style */
 .post-lost-cards {
   margin: 10px 30px;
   border: 1px solid var(--border-color);
@@ -715,7 +802,7 @@ body {
     }
   }
 }
-/* post-lost-type style */
+/* post-lost-type form page style */
 
 /* other page styles follow */
 @media screen and (max-width: 992px) {
