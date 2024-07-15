@@ -13,12 +13,14 @@
   --border-color: #eeeeee;
   --background-color: #fffbf6;
   --rare-color: #7f8b94;
+  --body-color: #fdfdfd;
   --white: #ffffff;
 }
 
 body {
   font-family: "Mulish Bold";
   height: 100vh;
+  background-color: var(--body-color);
 }
 
 .container {
@@ -230,6 +232,7 @@ body {
   }
 
   aside {
+    background-color: var(--white);
     border-right: 1px solid var(--border-color);
     flex: 1 1 10%;
     /* padding: 30px; */
@@ -777,7 +780,7 @@ body {
 }
 /* new inspection page style*/
 
-/* post-lost-type form page style */
+/* post-lost-type and pre-post form page style */
 .post-lost-cards {
   margin: 10px 30px;
   border: 1px solid var(--border-color);
@@ -786,23 +789,410 @@ body {
 
   p {
     padding: 10px;
-    font: 12px;
+    font-size: 14px;
+    color: #34475e;
   }
 
-  form {
-    width: 100%;
+  .first-column {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
 
-    input {
-      width: 400px;
+  label {
+    width: 95%;
+    margin: 5px 0;
+    font-size: 12px;
+    color: #344054;
+  }
+
+  .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+
+    input,
+    select {
+      height: 30px;
+      width: 95%;
+      padding: 0 10px;
+      border-radius: 5px;
+      border: 1px solid var(--border-color);
+      outline: none;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12px;
+    display: block;
+  }
+
+  button {
+    padding: 5px 15px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 2px;
+    color: var(--white);
+    font-size: 10px;
+  }
+
+  .input-box:nth-child(2n) {
+    justify-content: end;
+  }
+}
+/* post-lost-type and pre-loss-type form page style */
+
+/* rovenheight-page style */
+.rovenheight-card {
+  display: flex;
+  gap: 20px;
+
+  .rovenheight-left {
+    background-color: var(--white);
+    width: 20%;
+    margin: 0 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+
+    .img-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .progress-color {
+      color: #00b388;
+    }
+
+    p {
+      padding: 10px 0;
+      font-size: 14px;
+      color: var(--secondary-color);
+
+      span {
+        color: var(--primary-color);
+      }
+    }
+    .info-card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 10px;
       padding: 5px;
+
+      .details {
+        span {
+          font-size: 10px;
+          color: #7a7c87;
+        }
+        p {
+          font-size: 12px;
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+
+  .rovenheight-right {
+    .timer {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      position: relative;
+      top: -5px;
+      left: -5px;
+
+      i {
+        color: var(--primary-color);
+      }
+
+      p {
+        font-size: 10px;
+        color: #a7a7a7;
+      }
+    }
+
+    .status-card {
+      border-left: 1px solid #d3d0d0;
+      height: 300px;
+    }
+  }
+
+  .request-info-card {
+    margin: 20px 80px;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-left: 10px solid var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 600px;
+
+    .left-card-info {
+      display: flex;
+    }
+
+    .request-card-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font: 12px;
+      color: var(--primary-color);
+    }
+    .card-user-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #34475e;
+      }
+
+      span {
+        font-size: 8px;
+        color: var(--primary-color);
+      }
+
+      small {
+        font-size: 8px;
+        color: #7f8b94;
+      }
+    }
+
+    button {
+      background-color: var(--primary-color);
+      padding: 7px 15px;
+      border: none;
+      color: var(--white);
+      font-size: 12px;
+      border-radius: 2px;
+    }
+  }
+
+  .request-info-card-mute {
+    margin: 20px 40px;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-left: 10px solid #737373;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 600px;
+
+    .left-card-info {
+      display: flex;
+    }
+
+    .request-card-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font: 12px;
+      color: var(--primary-color);
+    }
+    .card-user-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #34475e;
+      }
+
+      span {
+        font-size: 8px;
+        color: var(--primary-color);
+      }
+
+      small {
+        font-size: 8px;
+        color: #7f8b94;
+      }
+    }
+
+    button {
+      background-color: #d4d4d4;
+      padding: 7px 30px;
+      border: none;
+      color: black;
+      font-size: 12px;
+      border-radius: 2px;
     }
   }
 }
-/* post-lost-type form page style */
+
+/* rovenheight-page style */
+
+/* survey report */
+.report-cards {
+  margin: 30px;
+
+  .top-report {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    gap: 80px;
+
+    .report-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+
+      img {
+        width: 100%;
+      }
+
+      span {
+        font-size: 10px;
+      }
+    }
+
+    .center-report {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      gap: 30px;
+
+      h2 {
+        font-size: 16px;
+        color: #34475e;
+      }
+
+      .column-wrap {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+          font-size: 10px;
+          color: #a3a3a3;
+        }
+
+        p {
+          font-size: 12px;
+          color: var(--secondary-color);
+        }
+      }
+    }
+
+    .line-divider {
+      border-left: 1px solid var(--border-color);
+    }
+
+    .progress-report {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      h3 {
+        font-size: 12px;
+        color: var(--primary-color);
+      }
+
+      span {
+        font-size: 12px;
+        color: #7f8b94;
+      }
+    }
+
+    /* progress par styling */
+
+    .progress-container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+
+    .progress-circle {
+      transform: rotate(-90deg);
+    }
+
+    .progress-background {
+      fill: none;
+      stroke: #e6e6e6;
+      stroke-width: 5;
+    }
+
+    .progress-bar {
+      fill: none;
+      stroke: var(--primary-color);
+      stroke-width: 5;
+      stroke-linecap: round;
+      transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+    }
+
+    .progress-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 12px;
+      color: var(--white);
+      font-weight: bold;
+    }
+
+    .inner-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: bold;
+      background-color: var(--primary-color);
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+}
+
+/* survey report */
 
 /* other page styles follow */
 @media screen and (max-width: 992px) {

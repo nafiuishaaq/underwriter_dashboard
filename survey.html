@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+  </head>
+  <body>
+    <!-- container begin -->
+    <div class="container-dash">
+      <nav>
+        <a href="index.html"><i class="fa-regular fa-objects-column"></i> </a>
+        <a href="#"><i class="fa-regular fa-calendar-lines"></i> </a>
+        <a href="#"><i class="fa-regular fa-objects-column"></i> </a>
+        <a href="#"><i class="fa-regular fa-chart-pie-simple"></i> </a>
+        <a href="#"><i class="fa-regular fa-gear-complex"></i> </a>
+      </nav>
+
+      <!-- aside begin -->
+      <aside>
+        <img src="image/leadwaylogodash.png" alt="" width="100%" />
+        <ul>
+          <div class="list">
+            <p>TRM</p>
+          </div>
+          <a href="dashboard.html">
+            <div class="list active">
+              <i class="fa-sharp fa-regular fa-chart-simple"></i>
+              <li>Overview</li>
+            </div>
+          </a>
+          <a href="list.html">
+            <div class="list">
+              <i class="fa-sharp fa-regular fa-table-list"></i>
+              <li>Request</li>
+            </div>
+          </a>
+        </ul>
+      </aside>
+      <!-- aside end -->
+
+      <main>
+        <div class="main-top">
+          <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+          <div class="top-right">
+            <a href="#">
+              <i class="bx bx-bell"></i>
+            </a>
+            <a href="#">
+              <img src="image/avatar.png" alt="" />
+              <span>Nafiu</span>
+              <i class="bx bx-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+        <!-- welcome mesage begin -->
+        <div class="dashboard-welcome">
+          <div class="message">
+            <h3>Survey report</h3>
+            <p>See Inspections across all business classes</p>
+          </div>
+          <!-- <div class="new-btn">
+            <a href="#" type="button" class="add-inspection-btn">
+              <i class="bx bx-plus"></i>Create New Inspection
+            </a>
+          </div> -->
+          <!-- welcome mesage end -->
+        </div>
+
+        <div class="report-cards">
+          <div class="top-report">
+            <div class="report-img">
+              <img src="image/report-img.png" alt="" />
+              <span><fa class="fa fa-circle-small"></fa> Properties</span>
+            </div>
+
+            <div class="center-report">
+              <h2>Rovenheights Properties LTD.</h2>
+              <div class="column-wrap">
+                <div class="column">
+                  <div class="col-top">
+                    <span>Policy Number</span>
+                    <p>ALR12358493</p>
+                  </div>
+                  <div class="col-top">
+                    <span>Expiry Date</span>
+                    <p>19 Dec. 2024</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="col-top">
+                    <span>Loss Type</span>
+                    <p>Non-Motor</p>
+                  </div>
+                  <div class="col-top">
+                    <span>Commencement Date</span>
+                    <p>19 Dec. 2019</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="col-top">
+                    <span>Policy Term (Years)</span>
+                    <p>5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="line-divider"></div>
+
+            <div class="progress-report">
+              <h3>Policy Progress</h3>
+              <div class="progress-container">
+                <svg class="progress-circle" width="100" height="100">
+                  <circle
+                    class="progress-background"
+                    cx="50"
+                    cy="50"
+                    r="45"
+                  ></circle>
+                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="inner-circle">
+                  <div class="progress-text">0%</div>
+                </div>
+              </div>
+              <span>3 Days to Expiry</span>
+            </div>
+            
+          </div>
+
+          <div class="bottom-report"></div>
+        </div>
+      </main>
+
+      <!-- container end -->
+    </div>
+
+    <!--script link  -->
+    <script src="script.js"></script>
+  </body>
+</html>
