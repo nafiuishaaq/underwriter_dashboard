@@ -673,6 +673,34 @@ body {
   }
 }
 
+.completed {
+  background-color: #ecfdf3;
+  color: green;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.ongoing {
+  background-color: #ffdebf;
+  color: #ff7a00;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.cancel {
+  background-color: #fef3f2;
+  color: #b42318;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.inactive {
+  background-color: #f2f4f7;
+  color: #344054;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
 /* request page style */
 
 /* new inspection page style*/
