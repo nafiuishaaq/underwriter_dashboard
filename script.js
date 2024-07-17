@@ -44,3 +44,47 @@ function simulateUserProgress() {
 }
 
 simulateUserProgress(); // Start the simulation
+
+// survey page tab
+const firstTabBtn = document.getElementById("tabone");
+const secondTabBtn = document.getElementById("tabtwo");
+const thirdTabBtn = document.getElementById("tabthree");
+
+const firstTab = document.getElementById("tabOneBody");
+const secondTab = document.getElementById("tabTwoBody");
+const thirdTab = document.getElementById("tabThreeBody");
+
+firstTabBtn.addEventListener("click", function () {
+  clearClasses();
+  resetStatus();
+  firstTabBtn.classList.add("active");
+  firstTab.classList.remove("active");
+});
+
+secondTabBtn.addEventListener("click", function () {
+  clearClasses();
+  resetStatus();
+  secondTabBtn.classList.add("active");
+  secondTab.classList.remove("active");
+});
+
+thirdTabBtn.addEventListener("click", function () {
+  clearClasses();
+  resetStatus();
+  thirdTabBtn.classList.add("active");
+  thirdTab.classList.remove("active");
+});
+
+function clearClasses() {
+  firstTabBtn.classList.remove("active");
+  secondTabBtn.classList.remove("active");
+  thirdTabBtn.classList.remove("active");
+}
+
+function resetStatus() {
+  firstTab.classList.add("active");
+  secondTab.classList.add("active");
+  thirdTab.classList.add("active");
+}
+
+firstTabBtn.click();

@@ -95,9 +95,9 @@
         <!-- head for request -->
         <div class="request-head">
           <div class="head-nav">
-            <a href="#" class="active">All requests</a>
-            <a href="#">Ongoing</a>
-            <a href="#">Completed</a>
+            <a href="#" class="" id="alltab">All requests</a>
+            <a href="#" class="" id="ongoingtab">Ongoing</a>
+            <a href="#" class="" id="completedtab">Completed</a>
           </div>
           <div class="request-head-right">
             <form action="" class="request-search">
@@ -117,43 +117,123 @@
         </div>
 
         <div class="request-body">
-          <table>
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Class</th>
-                <th>Inspection methode</th>
-                <th>Officer</th>
-                <th>Status</th>
-              </tr>
-            </thead>
+          <div class="wraptable" id="tableone">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Class</th>
+                  <th>Inspection methode</th>
+                  <th>Officer</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
 
-            <tbody>
-              <tr>
-                <td>12345</td>
-                <td>Nafiu Ishaq</td>
-                <td>Marine</td>
-                <td>Digital</td>
-                <td>Ahmed Mahmud</td>
-                <td>
-                  <a href=""><span class="completed">Quote request</span></a>
-                </td>
-              </tr>
-              <tr>
-                <td>12345</td>
-                <td>Nafiu Ishaq</td>
-                <td>Marine</td>
-                <td>Digital</td>
-                <td>Ahmed Mahmud</td>
-                <td>
-                  <a href="rovenheight.html"
-                    ><span class="ongoing">Quote request</span></a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
+              <tbody>
+                <tr>
+                  <td>12345</td>
+                  <td>Nafiu Ishaq</td>
+                  <td>Marine</td>
+                  <td>Digital</td>
+                  <td>Ahmed Mahmud</td>
+                  <td>
+                    <a href="rovenheight.html"
+                      ><span class="ongoing">Quote request</span></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>12345</td>
+                  <td>Nafiu Ishaq</td>
+                  <td>Marine</td>
+                  <td>Digital</td>
+                  <td>Ahmed Mahmud</td>
+                  <td>
+                    <a href="#"><span class="completed">Quote request</span></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="wraptable" id="tabletwo">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Class</th>
+                  <th>Inspection methode</th>
+                  <th>Officer</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>12345</td>
+                  <td>Nafiu Ishaq</td>
+                  <td>Marine</td>
+                  <td>Digital</td>
+                  <td>Ahmed Mahmud</td>
+                  <td>
+                    <a href=""><span class="ongoing">Quote request</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>12345</td>
+                  <td>Nafiu Ishaq</td>
+                  <td>Marine</td>
+                  <td>Digital</td>
+                  <td>Ahmed Mahmud</td>
+                  <td>
+                    <a href="rovenheight.html"
+                      ><span class="ongoing">Quote request</span></a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="wraptable" id="tablethree">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Class</th>
+                  <th>Inspection methode</th>
+                  <th>Officer</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>12345</td>
+                  <td>Nafiu Ishaq</td>
+                  <td>Marine</td>
+                  <td>Digital</td>
+                  <td>Ahmed Mahmud</td>
+                  <td>
+                    <a href=""><span class="completed">Quote request</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>12345</td>
+                  <td>Nafiu Ishaq</td>
+                  <td>Marine</td>
+                  <td>Digital</td>
+                  <td>Ahmed Mahmud</td>
+                  <td>
+                    <a href="rovenheight.html"
+                      ><span class="completed">Quote request</span></a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </main>
 
@@ -162,5 +242,51 @@
 
     <!--script link  -->
     <script src="script.js"></script>
+    <script>
+      
+      // list Inspection script
+      const allTabBtn = document.getElementById("alltab");
+      const ongoingTabBtn = document.getElementById("ongoingtab");
+      const completedTabBtn = document.getElementById("completedtab");
+
+      const tableOneTab = document.getElementById("tableone");
+      const tableTwoTab = document.getElementById("tabletwo");
+      const tableThreeTab = document.getElementById("tablethree");
+
+      allTabBtn.addEventListener("click", function () {
+        clearTab();
+        removeTab();
+        allTabBtn.classList.add("active");
+        tableOneTab.classList.remove("active");
+      });
+
+      ongoingTabBtn.addEventListener("click", function () {
+        clearTab();
+        removeTab();
+        ongoingTabBtn.classList.add("active");
+        tableTwoTab.classList.remove("active");
+      });
+
+      completedTabBtn.addEventListener("click", function () {
+        clearTab();
+        removeTab();
+        completedTabBtn.classList.add("active");
+        tableThreeTab.classList.remove("active");
+      });
+
+      function clearTab() {
+        allTabBtn.classList.remove("active");
+        ongoingTabBtn.classList.remove("active");
+        completedTabBtn.classList.remove("active");
+      }
+
+      function removeTab() {
+        tableOneTab.classList.add("active");
+        tableTwoTab.classList.add("active");
+        tableThreeTab.classList.add("active");
+      }
+
+      allTabBtn.click();
+    </script>
   </body>
 </html>
