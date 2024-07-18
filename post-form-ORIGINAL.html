@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+  </head>
+  <body>
+    <!-- container begin -->
+    <div class="container-dash">
+      <nav>
+        <a href="index.html"><i class="fa-regular fa-objects-column"></i> </a>
+        <a href="#"><i class="fa-regular fa-calendar-lines"></i> </a>
+        <a href="#"><i class="fa-regular fa-objects-column"></i> </a>
+        <a href="#"><i class="fa-regular fa-chart-pie-simple"></i> </a>
+        <a href="#"><i class="fa-regular fa-gear-complex"></i> </a>
+      </nav>
+
+      <!-- aside begin -->
+      <aside>
+        <img src="image/leadwaylogodash.png" alt="" width="100%" />
+        <ul>
+          <div class="list">
+            <p>TRM</p>
+          </div>
+          <a href="dashboard.html">
+            <div class="list active">
+              <i class="fa-sharp fa-regular fa-chart-simple"></i>
+              <li>Overview</li>
+            </div>
+          </a>
+          <a href="#">
+            <div class="list">
+              <i class="fa-sharp fa-regular fa-table-list"></i>
+              <li>Request</li>
+            </div>
+          </a>
+        </ul>
+      </aside>
+      <!-- aside end -->
+
+      <main>
+        <div class="main-top">
+          <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+          <div class="top-right">
+            <a href="#">
+              <i class="bx bx-bell"></i>
+            </a>
+            <a href="#">
+              <img src="image/avatar.png" alt="" />
+              <span>Nafiu</span>
+              <i class="bx bx-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+        <!-- welcome mesage begin -->
+        <div class="dashboard-welcome">
+          <div class="message">
+            <h3>Create New Inspection</h3>
+            <p>See inspection across all business classes</p>
+          </div>
+          <div>
+            <a href="new.html">
+              <i class="bx bx-chevron-left">Back to create request </i>
+            </a>
+          </div>
+          <!-- welcome mesage end -->
+        </div>
+
+        <!-- new cards begin-->
+        <div class="post-lost-cards">
+          <p>Post-Loss Inspection - Property</p>
+          <hr />
+          <form action="#">
+            <div class="form-content">
+              <div class="first-column">
+                <div class="input-box">
+                  <label for="insured for">Insured For(optional) </label>
+                  <input type="text" />
+                </div>
+                <div class="input-box">
+                  <label for="policy number">Policy Number(optional) </label>
+                  <input type="text" />
+                </div>
+                <div class="input-box">
+                  <label for="assign to">Assign To </label>
+                  <input type="text" />
+                </div>
+              </div>
+              <hr />
+              <div class="first-column">
+                <div class="input-box">
+                  <label for="contact first name">Contact First Name </label>
+                  <input type="text" />
+                </div>
+                <div class="input-box">
+                  <label for="Contact Last Name">Contact Last Name</label>
+                  <input type="text" />
+                </div>
+                <div class="input-box">
+                  <label for="Contact Phone number">Contact Phone number</label>
+                  <input type="text" />
+                </div>
+                <div class="input-box">
+                  <label for="Contact Email address"
+                    >Contact Email address</label
+                  >
+                  <input type="text" />
+                </div>
+              </div>
+              <hr />
+              <div class="first-column">
+                <div class="input-box">
+                  <label for="Risk House Number">Risk House Number </label>
+                  <input type="text" />
+                </div>
+                <div class="input-box">
+                  <label for="Risk Address">Risk Address</label>
+                  <input type="text" />
+                </div>
+                <div class="input-box">
+                  <label for="Risk Address">State</label>
+                  <select name="" id="">
+                    <option value="">Select a Language</option>
+                  </select>
+                </div>
+                <div class="input-box">
+                  <label for="Risk Address">LGA</label>
+                  <select name="" id="">
+                    <option value="">Select a Language</option>
+                  </select>
+                </div>
+              </div>
+              <hr />
+              <div class="input-box">
+                <label for="Property Description">Property Description</label>
+              </div>
+              <textarea name="" id="" rows="10"></textarea>
+
+              <a href="#">Attach document</a>
+              <div class="button-div"><button type="button">Generate</button></div class="button-div">
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <!-- container end -->
+    </div>
+
+    <!--script link  -->
+    <script src="script.js"></script>
+  </body>
+</html>

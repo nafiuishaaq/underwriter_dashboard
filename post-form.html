@@ -33,34 +33,35 @@
   <body>
     <!-- container begin -->
     <div class="container-dash">
-      <nav>
-        <a href="index.html"><i class="fa-regular fa-objects-column"></i> </a>
-        <a href="#"><i class="fa-regular fa-calendar-lines"></i> </a>
-        <a href="#"><i class="fa-regular fa-objects-column"></i> </a>
-        <a href="#"><i class="fa-regular fa-chart-pie-simple"></i> </a>
-        <a href="#"><i class="fa-regular fa-gear-complex"></i> </a>
-      </nav>
-
       <!-- aside begin -->
       <aside>
-        <img src="image/leadwaylogodash.png" alt="" width="100%" />
-        <ul>
-          <div class="list">
-            <p>TRM</p>
-          </div>
-          <a href="dashboard.html">
-            <div class="list active">
-              <i class="fa-sharp fa-regular fa-chart-simple"></i>
-              <li>Overview</li>
-            </div>
-          </a>
-          <a href="#">
+        <nav>
+          <a href="index.html"><i class="fa-regular fa-objects-column"></i> </a>
+          <a href="#"><i class="fa-regular fa-calendar-lines"></i> </a>
+          <a href="#"><i class="fa-regular fa-objects-column"></i> </a>
+          <a href="#"><i class="fa-regular fa-chart-pie-simple"></i> </a>
+          <a href="#"><i class="fa-regular fa-gear-complex"></i> </a>
+        </nav>
+        <div class="right-aside">
+          <img src="image/leadwaylogodash.png" alt="" width="100%" />
+          <ul>
             <div class="list">
-              <i class="fa-sharp fa-regular fa-table-list"></i>
-              <li>Request</li>
+              <p>TRM</p>
             </div>
-          </a>
-        </ul>
+            <a href="dashboard.html">
+              <div class="list active">
+                <i class="fa-sharp fa-regular fa-chart-simple"></i>
+                <li>Overview</li>
+              </div>
+            </a>
+            <a href="list.html">
+              <div class="list">
+                <i class="fa-sharp fa-regular fa-table-list"></i>
+                <li>Request</li>
+              </div>
+            </a>
+          </ul>
+        </div>
       </aside>
       <!-- aside end -->
 
@@ -97,74 +98,138 @@
           <p>Post-Loss Inspection - Property</p>
           <hr />
           <form action="#">
-            <div class="form-content">
-              <div class="first-column">
+            <!-- <div class="form-content"> -->
+            <div class="first-part">
+              <span class="form-row">
                 <div class="input-box">
-                  <label for="insured for">Insured For(optional) </label>
-                  <input type="text" />
+                  <label for="">Policy Number (optional) </label>
+                  <span class="input-wrapper">
+                    <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                    <input type="text" />
+                  </span>
                 </div>
                 <div class="input-box">
-                  <label for="policy number">Policy Number(optional) </label>
+                  <label for="insured for">Claim Number (optional) </label>
+                  <span class="input-wrapper">
+                    <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                    <input type="text"
+                  /></span>
+                </div>
+              </span>
+              <span class="form-row">
+                <div class="input-box">
+                  <label for="insured for">Insured For (optional) </label>
+                  <span class="input-wrapper">
+                    <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                    <input type="text" />
+                  </span>
                   <input type="text" />
                 </div>
                 <div class="input-box">
                   <label for="assign to">Assign To </label>
+                  <span class="input-wrapper">
+                    <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                    <input type="text" />
+                  </span>
                   <input type="text" />
                 </div>
-              </div>
-              <hr />
-              <div class="first-column">
+              </span>
+            </div>
+            <hr />
+            <div class="second-part">
+              <span class="form-row">
                 <div class="input-box">
                   <label for="contact first name">Contact First Name </label>
+                  <span class="input-wrapper">
+                    <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                    <input type="text" />
+                  </span>
                   <input type="text" />
                 </div>
                 <div class="input-box">
                   <label for="Contact Last Name">Contact Last Name</label>
+                  <span class="input-wrapper">
+                    <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                    <input type="text" />
+                  </span>
                   <input type="text" />
                 </div>
+              </span>
+              <span class="form-row">
                 <div class="input-box">
                   <label for="Contact Phone number">Contact Phone number</label>
-                  <input type="text" />
+                  <span class="input-wrapper">
+                    <select name="" id="" class="dial-code">
+                      <option value="">+234</option>
+                      <option value="">+227</option>
+                      <option value="">+1</option>
+                    </select>
+                    <input type="text" />
+                  </span>
                 </div>
                 <div class="input-box">
                   <label for="Contact Email address"
                     >Contact Email address</label
                   >
-                  <input type="text" />
+                  <span class="input-wrapper">
+                    <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                    <input type="text" />
+                  </span>
+                  <input type="email" />
                 </div>
-              </div>
-              <hr />
-              <div class="first-column">
+              </span>
+            </div>
+            <hr />
+            <div class="third-part">
+              <span class="form-row">
                 <div class="input-box">
                   <label for="Risk House Number">Risk House Number </label>
+                  <span class="input-wrapper">
+                    <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                    <input type="text" />
+                  </span>
                   <input type="text" />
                 </div>
                 <div class="input-box">
                   <label for="Risk Address">Risk Address</label>
+                  <span class="input-wrapper">
+                    <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                    <input type="text" />
+                  </span>
                   <input type="text" />
                 </div>
+              </span>
+              <span class="form-row">
                 <div class="input-box">
                   <label for="Risk Address">State</label>
                   <select name="" id="">
-                    <option value="">Select a Language</option>
+                    <option value="">Kaduna</option>
+                    <option value="">Abuja</option>
+                    <option value="">Abia</option>
                   </select>
                 </div>
                 <div class="input-box">
                   <label for="Risk Address">LGA</label>
                   <select name="" id="">
-                    <option value="">Select a Language</option>
+                    <option value="">Makarfi</option>
+                    <option value="">Lere</option>
+                    <option value="">Kafancan</option>
                   </select>
                 </div>
-              </div>
-              <hr />
-              <div class="input-box">
-                <label for="Property Description">Property Description</label>
-              </div>
-              <textarea name="" id=""></textarea>
-
-              <a href="#">Attach document</a>
-              <button type="button">Generate</button>
+              </span>
             </div>
+            <hr />
+            <div class="bottom-part">
+              <div class="input-box">
+                <label for="">Property Description</label>
+                <textarea name="" id="" rows="10"></textarea>
+              </div>
+              <a href="#">Attach document</a>
+              <div class="button-div">
+                <button type="button">Generate</button>
+              </div>
+            </div>
+            <!-- </div> -->
           </form>
         </div>
       </main>
