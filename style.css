@@ -333,7 +333,7 @@ body {
       }
 
       i {
-        font-size: 30px;
+        font-size: 20px;
       }
 
       img {
@@ -1452,6 +1452,10 @@ body {
 
 /* survey report */
 
+/* new page style */
+
+/* new page style */
+
 /* other page styles follow */
 @media screen and (max-width: 992px) {
   .container {
@@ -1565,6 +1569,19 @@ body {
     .main-top {
       .hamburger {
         visibility: visible !important;
+      }
+    }
+    .dashboard-welcome {
+      .message {
+        width: 50%;
+        h3 {
+          color: #34475e;
+          font-size: 16px !important;
+        }
+        p {
+          color: var(--dark-color);
+          font-size: 10px !important;
+        }
       }
     }
   }
