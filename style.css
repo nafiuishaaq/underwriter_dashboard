@@ -211,26 +211,6 @@ body {
   display: flex;
   height: 100%;
 
-  nav {
-    background-color: var(--dark-color);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    padding-top: 95px;
-
-    a {
-      color: var(--primary-color);
-      text-decoration: none;
-      padding: 10px;
-
-      &:hover {
-        background-color: var(--white);
-        color: var(--primary-color);
-      }
-    }
-  }
-
   aside {
     background-color: var(--white);
     border-right: 1px solid var(--border-color);
@@ -239,6 +219,41 @@ body {
     display: flex;
     /* flex-direction: column; */
 
+    nav {
+      background-color: var(--dark-color);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      padding-top: 95px;
+
+      a {
+        color: var(--primary-color);
+        text-decoration: none;
+        padding: 10px;
+
+        &:hover {
+          background-color: var(--white);
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    .right-aside {
+      .topimg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        i {
+          font-size: 30px;
+          position: relative;
+          bottom: -10px;
+          display: none;
+        }
+      }
+    }
     img {
       margin-top: 20px;
       padding: 15px;
@@ -859,9 +874,10 @@ body {
           border-radius: 5px;
           padding: 10px;
 
-          i {
-            /* style your search icon */
-          }
+          /* todo fixed me */
+          /* i {
+            style your search icon
+          } */
         }
 
         label {
@@ -1525,11 +1541,23 @@ body {
   /* Dashboard Style */
 
   aside {
-    display: none !important;
-    /* display: flex; */
+    display: flex !important;
+    width: 70%;
     position: fixed;
     z-index: 20;
     height: 100%;
+    cursor: pointer;
+  }
+
+  aside.active {
+    display: none !important;
+  }
+
+  .right-aside {
+    i {
+      display: block !important;
+      cursor: pointer;
+    }
   }
 
   main {
