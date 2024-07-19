@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .choose-class {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 100%;
+      }
+
+      @media (max-width: 900px) {
+        .choose-class {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+
+      .choose-class .class-selector {
+        position: relative;
+        width: 100%;
+        background-color: #ffffff;
+        border: 1px solid #eeeeee;
+        border-radius: 5px;
+      }
+
+      .choose-class .selected-option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      .choose-class .selected-option img {
+        margin-left: auto;
+      }
+
+      .choose-class .class-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .choose-class .class-dot.blue {
+        background-color: blue;
+      }
+
+      .choose-class .class-dot.orange {
+        background-color: orange;
+      }
+
+      .choose-class .class-dot.purple {
+        background-color: purple;
+      }
+
+      .choose-class .class-dot.green {
+        background-color: green;
+      }
+
+      .choose-class .class-dot.red {
+        background-color: red;
+      }
+
+      .choose-class .class-dot.yellow {
+        background-color: yellow;
+      }
+
+      .choose-class .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #ccc;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .choose-class .dropdown-menu li {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .choose-class .dropdown-menu li:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="choose-class">
+      <label for="class">Choose a class</label>
+      <div class="class-selector">
+        <div class="selected-option" id="selected-option">
+          <span class="class-dot blue"></span> Property
+          <img src="image/Arrow.png" alt="dropdown arrow" />
+        </div>
+        <ul class="dropdown-menu" id="dropdown-menu">
+          <li onclick="selectOption('Property', 'blue')">
+            <span class="class-dot blue"></span> Property
+          </li>
+          <li onclick="selectOption('Motors', 'orange')">
+            <span class="class-dot orange"></span> Motors
+          </li>
+          <li onclick="selectOption('Marine', 'purple')">
+            <span class="class-dot purple"></span> Marine
+          </li>
+          <li onclick="selectOption('Agric', 'green')">
+            <span class="class-dot green"></span> Agric
+          </li>
+          <li onclick="selectOption('Bond', 'red')">
+            <span class="class-dot red"></span> Bond
+          </li>
+          <li onclick="selectOption('Engineering', 'yellow')">
+            <span class="class-dot yellow"></span> Engineering
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <script src="js.js"></script> -->
+    <script>
+      document
+        .getElementById("selected-option")
+        .addEventListener("click", toggleDropdown);
+
+      function toggleDropdown() {
+        const dropdownMenu = document.getElementById("dropdown-menu");
+        dropdownMenu.style.display =
+          dropdownMenu.style.display === "block" ? "none" : "block";
+      }
+
+      function selectOption(text, color) {
+        const selectedOption = document.getElementById("selected-option");
+        selectedOption.innerHTML =
+          '<span class="class-dot ' +
+          color +
+          '"></span> ' +
+          text +
+          '<img src="image/Arrow.png" alt="dropdown arrow" />';
+        toggleDropdown();
+      }
+    </script>
+  </body>
+</html>

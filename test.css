@@ -1,0 +1,89 @@
+.choose-class {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .choose-class {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.choose-class .class-selector {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+
+.choose-class .selected-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.choose-class .selected-option img {
+  margin-left: auto;
+}
+
+.choose-class .class-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.choose-class .class-dot.blue {
+  background-color: blue;
+}
+
+.choose-class .class-dot.orange {
+  background-color: orange;
+}
+
+.choose-class .class-dot.purple {
+  background-color: purple;
+}
+
+.choose-class .class-dot.green {
+  background-color: green;
+}
+
+.choose-class .class-dot.red {
+  background-color: red;
+}
+
+.choose-class .class-dot.yellow {
+  background-color: yellow;
+}
+
+.choose-class .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.choose-class .dropdown-menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.choose-class .dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
