@@ -1363,7 +1363,7 @@ body {
 
       .second-right-column {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 80px;
         width: 60%;
         padding: 20px;
