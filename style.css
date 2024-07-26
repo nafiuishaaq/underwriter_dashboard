@@ -37,8 +37,9 @@ body {
   width: 100%;
   padding: 1rem 7%;
   background-color: var(--background-color);
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 
   form {
     width: 100%;
@@ -47,7 +48,7 @@ body {
 
   .logo img {
     width: 3.125rem;
-    margin-bottom: 0.9375rem;
+    /* margin-bottom: 0.9375rem; */
   }
 
   h2 {
@@ -67,6 +68,7 @@ body {
     margin-bottom: 0.9375rem;
     padding: 0.625rem 1.25rem;
     border-radius: 0.3125rem;
+    font-size: 1rem;
     input {
       width: 90%;
       height: 1.25rem;
@@ -1462,7 +1464,7 @@ body {
 
 /* other page styles follow */
 
-@media screen and (max-width: 6144px) {
+@media screen and (max-width: 7680px) {
   html {
     font-size: 80px;
   }
@@ -1578,6 +1580,21 @@ body {
 @media screen and (max-width: 768px) {
   .left-side {
     height: 100vh;
+    gap: 2.25rem !important;
+
+    .logo img {
+      margin-bottom: 0 !important;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      padding: 0;
+    }
+
+    .Welcome {
+      font-size: 0.875rem;
+      color: var(--tertiary-color);
+    }
   }
   .right-side {
     display: none;
